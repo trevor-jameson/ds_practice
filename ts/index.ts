@@ -1,7 +1,7 @@
-const world = "world";
+import isPrime from './src/isPrime';
 
-export function hello(who: string = "world"): string {
-    return `Hello ${who}!`;
-}
-
-console.log(hello(world))
+// console.log(isPrime(7) === true)
+// console.log(isPrime(31) === true)
+// console.log(isPrime(2017) === true)
+// console.log(isPrime(2048) === false)
+// console.log(isPrime(713) === false)
