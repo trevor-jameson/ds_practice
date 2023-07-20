@@ -1,7 +1,7 @@
-import NodeDS from "./NodeDS";
+import NodeLL from "./NodeLL";
 
-const sumList = (head: NodeDS): number => {
-  let curNode: NodeDS | null = head;
+const sumList = (head: NodeLL): number => {
+  let curNode: NodeLL | null = head;
   let sum = 0;
   while (curNode) {
     sum += curNode.val;

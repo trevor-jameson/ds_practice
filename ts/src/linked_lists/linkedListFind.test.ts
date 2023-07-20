@@ -1,12 +1,12 @@
 import linkedListFind from './linkedListFind';
-import NodeDS from './NodeDS';
+import NodeLL from './NodeLL';
 
 describe("linkedListFind()", () => {
   test('returns true when a there is a matching value', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
 
     a.next = b;
     b.next = c;
@@ -17,10 +17,10 @@ describe("linkedListFind()", () => {
     expect(result).toEqual(true);
   });
   test('returns false when a there is no matching value', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
 
     a.next = b;
     b.next = c;
@@ -32,14 +32,14 @@ describe("linkedListFind()", () => {
   });
 
   test('returns true when a there is a matching value in a single-node list', () => {
-    const a = new NodeDS("a");
+    const a = new NodeLL("a");
 
     const result = linkedListFind(a, "a");
     expect(result).toEqual(true);
   });
 
   test('returns true when a there is no matching value in a single-node list', () => {
-    const a = new NodeDS("a");
+    const a = new NodeLL("a");
 
     const result = linkedListFind(a, "qwerty");
     expect(result).toEqual(false);

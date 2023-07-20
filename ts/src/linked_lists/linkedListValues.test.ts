@@ -1,12 +1,12 @@
 import linkedListValues from './linkedListValues';
-import NodeDS from './NodeDS';
+import NodeLL from './NodeLL';
 
 describe("linkedListValues()", () => {
   test('returns an array of all node values in the linked list', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
     a.next = b;
     b.next = c;
     c.next = d;

@@ -1,12 +1,12 @@
 import getNodeValue from './getNodeValue';
-import NodeDS from './NodeDS';
+import NodeLL from './NodeLL';
 
 describe("getNodeValue()", () => {
   test('returns the value from node at the target index', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
 
     a.next = b;
     b.next = c;
@@ -18,10 +18,10 @@ describe("getNodeValue()", () => {
     expect(result).toEqual("c");
   });
   test('returns null when there is no node at the target index', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
 
     a.next = b;
     b.next = c;
@@ -34,7 +34,7 @@ describe("getNodeValue()", () => {
   });
 
   test('returns the value from only node when target index is 0', () => {
-    const a = new NodeDS("a");
+    const a = new NodeLL("a");
 
     const targetIndex = 0;
 

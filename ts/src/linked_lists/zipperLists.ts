@@ -1,4 +1,4 @@
-import NodeDS from "./NodeDS";
+import NodeLL from "./NodeLL";
 
 // PROMPT: Write a function, zipperLists, that takes in the head of two linked lists as arguments. 
 // The function should zipper the two lists together into single linked list by alternating nodes. 
@@ -28,7 +28,7 @@ import NodeDS from "./NodeDS";
 // };
 
 // ATTEMPT #2
-const zipperLists = (head1: NodeDS, head2: NodeDS): NodeDS => {
+const zipperLists = (head1: NodeLL, head2: NodeLL): NodeLL => {
     const head = head1;
     let tail = head;
     let current1 = head1.next;

@@ -1,16 +1,16 @@
 
 import reverseList from './reverseList';
 import linkedListValues from './linkedListValues';
-import NodeDS from './NodeDS';
+import NodeLL from './NodeLL';
 
 describe("reverseList()", () => {
   test('reverses the linked lists order and returns the new head', () => {
-    const a = new NodeDS("a");
-    const b = new NodeDS("b");
-    const c = new NodeDS("c");
-    const d = new NodeDS("d");
-    const e = new NodeDS("e");
-    const f = new NodeDS("f");
+    const a = new NodeLL("a");
+    const b = new NodeLL("b");
+    const c = new NodeLL("c");
+    const d = new NodeLL("d");
+    const e = new NodeLL("e");
+    const f = new NodeLL("f");
 
     a.next = b;
     b.next = c;

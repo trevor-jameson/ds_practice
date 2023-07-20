@@ -1,10 +1,10 @@
-import NodeDS from "./NodeDS";
+import NodeLL from "./NodeLL";
 
 // PROMPT: Write a function, reverseList, that takes in the head of a linked list as an argument. 
 // The function should reverse the order of the nodes in the linked list in-place and return the new head of the reversed linked list.
 
 // ATTEMPT #1
-// const reverseList = (head: NodeDS): NodeDS => {
+// const reverseList = (head: NodeLL): NodeLL => {
 //   let prev = null;
 //   let current = head; // { val: a, next: node b}
 //   let next = current.next; // {val: b, next: node c}
@@ -20,8 +20,8 @@ import NodeDS from "./NodeDS";
 // }
 
 // ATTEMPT #2
-const reverseList = (node: NodeDS): NodeDS => {
-    let tail: NodeDS | null = null;
+const reverseList = (node: NodeLL): NodeLL => {
+    let tail: NodeLL | null = null;
     let current = node;
     let next = node.next;
     while (next) {

@@ -1,19 +1,19 @@
 import zipperLists from "./zipperLists";
 import linkedListValues from "./linkedListValues";
-import NodeDS from "./NodeDS";
+import NodeLL from "./NodeLL";
 
 describe("zipperLists()", () => {
     test('reverses the linked lists order and returns the new head', () => {
-        const a = new NodeDS("a");
-        const b = new NodeDS("b");
-        const c = new NodeDS("c");
+        const a = new NodeLL("a");
+        const b = new NodeLL("b");
+        const c = new NodeLL("c");
         a.next = b;
         b.next = c;
         // a -> b -> c
         
-        const x = new NodeDS("x");
-        const y = new NodeDS("y");
-        const z = new NodeDS("z");
+        const x = new NodeLL("x");
+        const y = new NodeLL("y");
+        const z = new NodeLL("z");
         x.next = y;
         y.next = z;
     
